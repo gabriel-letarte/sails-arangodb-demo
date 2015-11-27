@@ -1,11 +1,11 @@
 module.exports = {
     tableName: 'user',
     attributes: {
-        id: {
-            type: 'string',
-            primaryKey: true,
-            columnName: '_key'
-        },
+        // id: {
+        //     type: 'string',
+        //     primaryKey: true,
+        //     columnName: '_key'
+        // },
         username: {
             type: 'string'
         },

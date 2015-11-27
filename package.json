@@ -1,8 +1,8 @@
 {
-  "name": "arangodb-sails-driver",
+  "name": "sails-arangodb-demo",
   "private": true,
   "version": "0.0.0",
-  "description": "a Sails application",
+  "description": "Sails application showcasing the usage of ArangoDB being used via Waterline ArangoDB adapter",
   "keywords": [],
   "dependencies": {
     "ejs": "~0.8.4",
@@ -30,7 +30,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/gabriel/arangodb-sails-driver.git"
+    "url": "git@github.com:gabriel-letarte/sails-arangodb-demo.git"
   },
   "author": "gabriel",
   "license": ""
