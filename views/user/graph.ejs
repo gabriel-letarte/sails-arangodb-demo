@@ -1,5 +1,7 @@
-<% for(var i=0; i<users.length; i++) { %>
-  <li>
-    <%= users[i].name %>
-  </li>
-<% } %>
+<script>
+  var userLinks = [
+    <% for(var i=0; i<neighbors.length; i++) { %>
+        {source: '<%= user.username %>', target: '<%= neighbors[i].username %>', type: 'licensing'},
+    <% } %>
+  ];
+</script>
