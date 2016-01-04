@@ -32,9 +32,17 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
+  'get /': {
     view: 'homepage'
-  }
+  },
+
+  // Users
+  'get /users': 'UserController.all',
+  'get /users/:user_id': 'UserController.find',
+
+  'post /users': 'UserController.create',
+
+  'delete /users/:user_id': 'UserController.delete',
 
   /***************************************************************************
   *                                                                          *
