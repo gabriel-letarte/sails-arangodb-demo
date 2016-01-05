@@ -37,6 +37,8 @@ module.exports.routes = {
   },
 
   // Users
+  'get /users/graph': 'UserController.graph',
+
   'get /users': 'UserController.all',
   'get /users/:user_id': 'UserController.find',
 
