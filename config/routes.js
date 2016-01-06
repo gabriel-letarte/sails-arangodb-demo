@@ -38,6 +38,8 @@ module.exports.routes = {
 
   // Users
   'get /users/graph': 'UserController.graph',
+  'post /users/edges': 'UserController.createEdge',
+  'delete /users/edges/:edge_id': 'UserController.deleteEdge',
 
   'get /users': 'UserController.all',
   'get /users/:user_id': 'UserController.find',

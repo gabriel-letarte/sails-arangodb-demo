@@ -16,6 +16,30 @@ module.exports = {
   },
 
   /**
+   * Showcase of ArangoDB "create edge".
+  */
+  createEdge: function(req, res) {
+    var data = req.body;
+    var id1 = req.body.id1;
+    var id2 = req.body.id2;
+    delete data.id1;
+    delete data.id2;
+
+    User.createEdge('knows', req.body.id1, req.body.id2, function(err, r){
+      return res.json(r);
+    });
+  },
+
+  /**
+   * Showcase of ArangoDB "delete edge".
+  */
+  deleteEdge: function(req, res) {
+    User.deleteEdge('knows', req.params.edge_id, function(err, r){
+      return res.json(r);
+    });
+  },
+
+  /**
    * Find all users
    * All query params will be taken and given to the query
    * e.g: /users?username=Mikael
