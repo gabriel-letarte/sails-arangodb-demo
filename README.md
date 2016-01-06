@@ -4,7 +4,7 @@
 
 ## Running
 
-Once SailsJS is (installed)[http://sailsjs.org/get-started],
+Once SailsJS is installed (http://sailsjs.org/get-started),
 
 ```
 npm install
